@@ -1,0 +1,13 @@
+{
+  "greeting": "Halo, Selamat Pagi",
+  "expense": "Pengeluaran",
+  "income": "Pemasukan",
+  "sign_in": "Masuk dengan Google",
+  "title": "Judul",
+  "amount": "Jumlah (IDR)",
+  "date": "Tanggal",
+  "category": "Kategori",
+  "note": "Catatan (opsional)",
+  "save": "Simpan",
+  "cancel": "Batal"
+}

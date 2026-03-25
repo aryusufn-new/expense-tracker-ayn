@@ -1,8 +1,11 @@
+
 import { Wallet } from 'lucide-react';
 import { auth, googleProvider } from '../firebase';
 import { signInWithPopup } from 'firebase/auth';
+import { useTranslation } from 'react-i18next';
 
 export default function LoginPage() {
+  const { t, i18n } = useTranslation();
   const handleLogin = async () => {
     try {
       await signInWithPopup(auth, googleProvider);
@@ -21,7 +24,7 @@ export default function LoginPage() {
 
         <h1 className="login-title">ExpenseTracker</h1>
         <p className="login-sub">
-          Track your daily expenses quickly,<br />neatly, and easily.
+          {t('greeting')}
         </p>
 
         <button className="login-btn" onClick={handleLogin}>
@@ -30,8 +33,13 @@ export default function LoginPage() {
             alt="Google"
             width="24"
           />
-          Sign in with Google
+          {t('sign_in')}
         </button>
+
+        <div style={{ margin: '16px 0 0 0', display: 'flex', gap: 8, justifyContent: 'center' }}>
+          <button onClick={() => i18n.changeLanguage('en')} style={{ padding: '2px 8px' }}>English</button>
+          <button onClick={() => i18n.changeLanguage('id')} style={{ padding: '2px 8px' }}>Indonesia</button>
+        </div>
 
         <p className="login-footer">© 2026 ExpenseTracker · Built with ☕</p>
       </div>

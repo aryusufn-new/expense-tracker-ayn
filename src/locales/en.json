@@ -1,0 +1,13 @@
+{
+  "greeting": "Hello, Good Morning",
+  "expense": "Expense",
+  "income": "Income",
+  "sign_in": "Sign in with Google",
+  "title": "Title",
+  "amount": "Amount (IDR)",
+  "date": "Date",
+  "category": "Category",
+  "note": "Note (optional)",
+  "save": "Save",
+  "cancel": "Cancel"
+}
