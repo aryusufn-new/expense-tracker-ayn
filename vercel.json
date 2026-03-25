@@ -1,0 +1,16 @@
+# Vercel configuration for Vite React app
+# See https://vercel.com/docs/projects/project-configuration for details
+
+[build]
+  command = "npm run build"
+  output = "dist"
+
+[dev]
+  command = "vite"
+
+[routes]
+  # Redirect all requests to index.html (SPA)
+  [[routes]]
+    src = "/(.*)"
+    dest = "/index.html"
+    status = 200
