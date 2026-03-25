@@ -36,10 +36,7 @@ export default function LoginPage() {
           {t('sign_in')}
         </button>
 
-        <div style={{ margin: '16px 0 0 0', display: 'flex', gap: 8, justifyContent: 'center' }}>
-          <button onClick={() => i18n.changeLanguage('en')} style={{ padding: '2px 8px' }}>English</button>
-          <button onClick={() => i18n.changeLanguage('id')} style={{ padding: '2px 8px' }}>Indonesia</button>
-        </div>
+
 
         <p className="login-footer">© 2026 ExpenseTracker · Built with ☕</p>
       </div>
